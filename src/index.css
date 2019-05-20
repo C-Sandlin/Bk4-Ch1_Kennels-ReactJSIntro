@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-left: 10px;
 }
 
 code {
@@ -13,6 +12,3 @@ code {
     monospace;
 }
 
-.locations, .employees, .animals {
-  margin-top: 50px;
-}
