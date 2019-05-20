@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
 export default class AnimalList extends Component {
+    // getOwner = (ownerId) => {
+    //     return ownerId = this.props.animals.ownerId;
+    // }
+
     render() {
         return (
             <div className="animals">
@@ -8,8 +12,11 @@ export default class AnimalList extends Component {
                 {
                     this.props.animals.map(animal =>
                         <div key={animal.id}>
-                            <h4>Name: {animal.name}</h4>
+                            <h5>Name: {animal.name}</h5>
                             <p>Animal: {animal.animal}</p>
+                            <p>Owner:&nbsp;
+                            {this.props.owners.find(owner => owner.id === animal.ownerId).name}
+                            </p>
                         </div>
                     )
                 }
@@ -17,3 +24,5 @@ export default class AnimalList extends Component {
         );
     }
 }
+
+
