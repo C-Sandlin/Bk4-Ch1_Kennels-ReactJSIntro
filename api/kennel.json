@@ -64,6 +64,13 @@
       "employeeId": 2,
       "ownerId": 4,
       "id": 8
+    },
+    {
+      "name": "StinkyPoo",
+      "breed": "cat",
+      "employeeId": 3,
+      "ownerId": 1,
+      "id": 9
     }
   ],
   "ownersFromAPI": [
@@ -96,6 +103,11 @@
       "id": 6,
       "name": "Angela Lee",
       "phone": "205.501.6486"
+    },
+    {
+      "name": "Jason Collum",
+      "phone": "205.253.2125",
+      "id": 7
     }
   ]
 }
