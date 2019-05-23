@@ -1,0 +1,98 @@
+{
+  "employeesFromAPI": [
+    {
+      "id": 1,
+      "name": "Jessica Younker"
+    },
+    {
+      "id": 2,
+      "name": "Jordan Nelson"
+    },
+    {
+      "id": 3,
+      "name": "Zoe LeBlanc"
+    },
+    {
+      "id": 4,
+      "name": "Blaise Roberts"
+    }
+  ],
+  "locationsFromAPI": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "500 Circle Way"
+    },
+    {
+      "id": 2,
+      "name": "Nashville South",
+      "address": "10101 Binary Court"
+    }
+  ],
+  "animalsFromAPI": [
+    {
+      "id": 5,
+      "name": "Derkins",
+      "animal": "Snake",
+      "ownerId": 2
+    },
+    {
+      "id": 4,
+      "name": "Derek",
+      "animal": "Iguana",
+      "ownerId": 3
+    },
+    {
+      "id": 6,
+      "name": "Dank Daddy",
+      "animal": "Dog",
+      "ownerId": 1
+    },
+    {
+      "name": "Goose",
+      "breed": "Golden Retriever",
+      "employeeId": 1,
+      "id": 7,
+      "ownerId": 1
+    },
+    {
+      "name": "Jake",
+      "breed": "Snake",
+      "employeeId": 2,
+      "ownerId": 4,
+      "id": 8
+    }
+  ],
+  "ownersFromAPI": [
+    {
+      "id": 1,
+      "name": "Ryan Tanay",
+      "phone": "205.281.6479"
+    },
+    {
+      "id": 2,
+      "name": "Emma Beaton",
+      "phone": "251.341.6455"
+    },
+    {
+      "id": 3,
+      "name": "Dani Adkins",
+      "phone": "278.321.6404"
+    },
+    {
+      "id": 4,
+      "name": "Adam Oswalt",
+      "phone": "205.301.6465"
+    },
+    {
+      "id": 5,
+      "name": "Dude Bangs",
+      "phone": "205.281.6468"
+    },
+    {
+      "id": 6,
+      "name": "Angela Lee",
+      "phone": "205.501.6486"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+.ownerList {
+    font-size: 0.75em;
+}
+
+.icon--dog {
+    width: 50px;
+    height: 50px;
+}
+
+.animalButton {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 10px 0;
+  }
+
+  .animalItem {
+      border: 1px solid rgb(199, 199, 199);
+      margin: 10px;
+      border-radius: 10px;
+      padding: 20px;
+      justify-content: center;
+      align-content: center;
+  }
+
+  /* .animals {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .animals button {
+      margin-top: 400px;
+  } */

@@ -3,7 +3,19 @@ import { Link } from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 
-class NavBar extends Component {
+export default class NavBar extends Component {
+    state = {
+        input: ""
+    }
+
+    submitHandler = (e) => {
+        if (e.key === "Enter") {
+            const inputText = e.target.value;
+            this.props.getResults(inputText);
+        }
+    }
+
+
     render() {
         return (
             <nav className="navbar navbar-light light-blue flex-md-nowrap p-0 shadow">
@@ -20,10 +32,15 @@ class NavBar extends Component {
                     <li className="nav-item">
                         <Link className="nav-link" to="/owners">Owners</Link>
                     </li>
+                    <input
+                        id="search-input"
+                        type="text"
+                        placeholder="Search here..."
+                        onKeyDown={this.submitHandler}
+                    ></input>
+
                 </ul>
             </nav>
         )
     }
 }
-
-export default NavBar
