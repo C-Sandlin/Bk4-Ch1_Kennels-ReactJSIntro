@@ -33,20 +33,23 @@
     {
       "id": 5,
       "name": "Derkins",
-      "animal": "Snake",
-      "ownerId": 2
+      "breed": "Snake",
+      "employeeId": 1,
+      "ownerId": 1
     },
     {
       "id": 4,
       "name": "Derek",
-      "animal": "Iguana",
-      "ownerId": 3
+      "breed": "Iguana",
+      "ownerId": 3,
+      "employeeId": 1
     },
     {
       "id": 6,
       "name": "Dank Daddy",
-      "animal": "Dog",
-      "ownerId": 1
+      "breed": "Dog",
+      "ownerId": 1,
+      "employeeId": 1
     },
     {
       "name": "Goose",
