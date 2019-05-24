@@ -10,5 +10,13 @@ export default {
     search(input) {
         return fetch(`${remoteURL}/employeesFromAPI?name_like=${input}`)
             .then(e => e.json())
+    },
+    deleteEmployee(employeeId) {
+        return fetch(`${remoteURL}/employeesFromAPI/${employeeId}`, {
+            method: "DELETE",
+            headers: {
+                "Content-type": "application/json"
+            }
+        }).then(e => e.json())
     }
 }

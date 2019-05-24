@@ -5,7 +5,7 @@ import AnimalItem from './AnimalItem';
 
 export default class AnimalList extends Component {
     determineIfOwner = (animal) => {
-        console.log(animal);
+
         let AllOwners = [];
         if (animal.ownerId) {
             AllOwners = this.props.owners.find(owner => owner.id === animal.ownerId).name;
@@ -30,12 +30,10 @@ export default class AnimalList extends Component {
                 {
                     this.props.animals.map(animal => {
 
-                        return <AnimalItem key={animal.id} animal={animal} deleteAnimal={this.props.deleteAnimal} owner={this.determineIfOwner(animal)} />
+                        return <AnimalItem key={animal.id} animal={animal} deleteAnimal={this.props.deleteAnimal} owner={this.determineIfOwner(animal)} {...this.props} />
                     })
                 }
             </div>
         );
     }
 }
-
-// owner={AllOwners}

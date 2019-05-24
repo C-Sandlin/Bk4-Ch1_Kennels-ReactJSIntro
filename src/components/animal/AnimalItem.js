@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import dog from "./DogIcon.svg"
 import { Link } from 'react-router-dom';
 
+
 export default class AnimalItem extends Component {
     state = {
         saveDisabled: false
@@ -18,13 +19,21 @@ export default class AnimalItem extends Component {
 
     render() {
         return (
-            <article className="animalItem">
+            <article className="card-body">
                 <img src={dog} className="icon--dog" alt="dog" />
                 <h3>{this.props.animal.name}</h3>
                 <p>Owner: {this.props.owner}</p>
                 <Link className="nav-link" to={`/animals/${this.props.animal.id}`}>Details</Link>
+                <button
+                    type="button"
+                    className="btn btn-success"
+                    onClick={() => {
+                        this.props.history.push(`/animals/${this.props.animal.id}/edit`);
+                    }}
+                >Edit</button>
                 <button onClick={this.handleClick} disabled={this.state.saveDisabled}>Delete</button>
             </article>
         )
     }
 }
+

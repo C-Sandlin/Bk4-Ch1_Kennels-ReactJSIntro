@@ -47,7 +47,7 @@ class Kennel extends Component {
 
     render() {
         return (
-            <React.Fragment>
+            <>
                 <NavBar inputHandler={this.inputHandler} input={this.state.input} getResults={this.getResults} />
                 <ApplicationViews
                     input={this.state.input}
@@ -55,7 +55,7 @@ class Kennel extends Component {
                     ownerResults={this.state.ownerResults}
                     locationResults={this.state.locationResults}
                     employeeResults={this.state.employeeResults} />
-            </React.Fragment>
+            </>
         )
     }
 }
