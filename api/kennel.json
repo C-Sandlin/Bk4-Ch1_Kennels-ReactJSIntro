@@ -71,6 +71,13 @@
       "employeeId": 2,
       "ownerId": 4,
       "id": 8
+    },
+    {
+      "name": "catdog",
+      "breed": "cat/dog",
+      "employeeId": 1,
+      "ownerId": 1,
+      "id": 9
     }
   ],
   "ownersFromAPI": [

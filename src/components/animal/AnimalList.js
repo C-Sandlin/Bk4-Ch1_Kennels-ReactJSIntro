@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 // import { isTemplateElement } from '@babel/types';
 import AnimalItem from './AnimalItem';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -10,7 +12,6 @@ export default class AnimalList extends Component {
     state = {
         modal: false
     }
-
     determineIfOwner = (animal) => {
 
         let AllOwners = [];
@@ -30,6 +31,7 @@ export default class AnimalList extends Component {
     render() {
         return (
             <div>
+
                 <div className="animals">
                     <div className="animalButton">
                         <button type="button"
@@ -39,12 +41,16 @@ export default class AnimalList extends Component {
                             }
                             }>
                             Admit Animal
-                    </button>
+                        </button>
                         <button type="button"
                             className="btn btn-success"
-                            onClick={this.toggle} >
+                            onClick={() => {
+                                this.toggle()
+
+                            }
+                            }>
                             Test Button
-                    </button>
+                        </button>
                     </div>
                     <h3>Animals:</h3>
                     {
@@ -55,12 +61,11 @@ export default class AnimalList extends Component {
                     }
                 </div>
                 <div>
-
                     <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                         <ModalHeader toggle={this.toggle}>Test Modal</ModalHeader>
                         <ModalBody>
                             The modal worked!
-          </ModalBody>
+                        </ModalBody>
                         <ModalFooter>
                             <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
                             <Button color="secondary" onClick={this.toggle}>Cancel</Button>

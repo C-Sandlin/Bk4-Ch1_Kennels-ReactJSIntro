@@ -141,7 +141,10 @@ class ApplicationViews extends Component {
                             animals={this.state.animals}
                             owners={this.state.owners}
                             deleteAnimal={this.deleteAnimal}
-                            {...props} />
+                            {...props}
+                            employees={this.state.employees}
+                            addAnimal={this.addAnimal}
+                        />
                     } else {
                         return <Redirect to="/login" />
                     }
@@ -214,6 +217,8 @@ class ApplicationViews extends Component {
                         return <Redirect to="/login" />
                     }
                 }} />
+
+
                 <Route path="/search" render={(props) => {
                     if (this.isAuthenticated()) {
                         return <SearchResults
